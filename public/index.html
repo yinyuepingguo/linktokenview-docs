@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>联视未来 LinkTokenView 帮助中心｜国产大模型 API 接入文档</title>
+  <meta name="description" content="LinkTokenView（联视未来）帮助中心：一个 OpenAI 兼容接口接入 DeepSeek、通义千问、Kimi、豆包等国产大模型，含注册、API 密钥、模型广场、定价订阅与 Agent 工具接入指引。">
+  <meta name="keywords" content="国产大模型 API,大模型 API 聚合,DeepSeek API,通义千问 API,Kimi API,豆包 API,OpenAI 兼容,Token 计费">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://linktokenview.com/docs">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LinkTokenView">
+  <meta property="og:title" content="联视未来 LinkTokenView 帮助中心｜国产大模型 API 接入文档">
+  <meta property="og:description" content="一个 OpenAI 兼容接口接入 DeepSeek、通义千问、Kimi、豆包等国产大模型。">
+  <meta property="og:url" content="https://linktokenview.com/docs">
+  <meta property="og:locale" content="zh_CN">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "联视未来 LinkTokenView 帮助中心",
+    "description": "国产大模型 API 聚合平台的接入与使用文档",
+    "url": "https://linktokenview.com/docs",
+    "publisher": { "@type": "Organization", "name": "联视未来", "alternateName": "LinkTokenView" }
+  }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./vendor/theme-simple.css">
+  <style>
+    :root {
+      /* 排版 - sub2api 同款字体栈和行高 */
+      --base-font-size: 15px;
+      --base-line-height: 1.75;
+      --base-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+
+      /* 主色调 - 与 sub2api 一致的 teal 色系 */
+      --theme-hue: 174;
+      --theme-saturation: 77%;
+      --theme-lightness: 40%;
+
+      /* 文字颜色 - 更深更清晰 */
+      --base-color: #1f2937;
+      --heading-color: #111827;
+      --strong-color: #111827;
+      --link-color: #0d9488;
+      --link-color--hover: #0f766e;
+      --link-text-decoration: none;
+      --link-text-decoration--hover: underline;
+
+      /* 侧边栏 - sub2api 风格浅灰底 */
+      --sidebar-width: 260px;
+      --sidebar-background: #f8fafc;
+      --sidebar-name-font-size: 24px;
+      --sidebar-name-font-weight: 700;
+      --sidebar-name-color: #0f766e;
+      --sidebar-name-text-align: left;
+      --sidebar-name-padding: 20px 25px 8px;
+      --sidebar-border-color: #e2e8f0;
+      --sidebar-border-width: 0 1px 0 0;
+      --sidebar-nav-link-color--active: #0d9488;
+      --sidebar-nav-link-border-color--active: #14b8a6;
+      --sidebar-nav-link-border-width--active: 0 3px 0 0;
+      --sidebar-nav-link-font-weight--active: 600;
+      --sidebar-nav-link-background--active: rgba(20, 184, 166, 0.08);
+      --sidebar-nav-link-text-decoration--active: none;
+      --sidebar-nav-link-text-decoration--hover: none;
+      --sidebar-nav-link-border-radius: 0 8px 8px 0;
+      --sidebar-nav-link-margin: 1px -12px 1px 0;
+      --sidebar-nav-link-padding: 6px 12px;
+
+      /* 代码 - sub2api 深色代码块 + 粉色行内代码 */
+      --code-font-size: 13px;
+      --code-inline-background: #f1f5f9;
+      --code-inline-color: #db2777;
+      --code-inline-border-radius: 6px;
+      --code-inline-padding: 0.15em 0.4em;
+      --code-theme-background: #1e293b;
+      --code-theme-text: #e2e8f0;
+      --code-theme-comment: #64748b;
+      --code-theme-keyword: #7dd3fc;
+      --code-theme-function: #f472b6;
+      --code-theme-tag: #7dd3fc;
+      --code-theme-variable: #fbbf24;
+      --code-theme-selector: #34d399;
+      --code-theme-string: #a5f3fc;
+      --code-block-border-radius: 12px;
+      --code-block-padding: 1.25em 1.5em;
+
+      /* 引用块 - sub2api 蓝色左边框 + 浅蓝背景 */
+      --blockquote-border-color: #3b82f6;
+      --blockquote-background: #eff6ff;
+      --blockquote-border-radius: 0 8px 8px 0;
+      --blockquote-border-width: 0 0 0 4px;
+      --blockquote-padding: 1em 1.5em;
+
+      /* 表格 - sub2api 现代表格风格 */
+      --table-head-background: #f0f9ff;
+      --table-head-font-weight: 600;
+      --table-cell-border-color: #e5e7eb;
+      --table-cell-padding: 10px 16px;
+      --table-row-even-background: #f9fafb;
+      --border-radius-s: 6px;
+      --border-radius-m: 8px;
+      --border-radius-l: 12px;
+
+      /* 封面 */
+      --cover-heading-color: #14b8a6;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">加载中...</div>
+  <script>
+    const currentPath = window.location.pathname || '/';
+    const docsBasePath = currentPath.endsWith('/')
+      ? currentPath
+      : currentPath.slice(0, currentPath.lastIndexOf('/') + 1);
+
+    window.$docsify = {
+      name: '联视未来',
+      repo: '',
+      basePath: docsBasePath,
+      loadSidebar: true,
+      subMaxLevel: 0,
+      search: {
+        placeholder: '搜索文档',
+        noData: '未找到结果',
+        paths: 'auto'
+      },
+      auto2top: true,
+      coverpage: false,
+    }
+  </script>
+  <script src="./vendor/docsify.min.js"></script>
+  <script src="./vendor/search.min.js"></script>
+</body>
+</html>

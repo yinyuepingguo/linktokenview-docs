@@ -1,0 +1,28 @@
+- [首页](/)
+- [快速开始](/first-call)
+  - [1. 注册与登录](/getting-started)
+  - [2. 创建 API 密钥](/api-keys)
+  - [3. 确认余额与订阅状态](/usage)
+  - [4. 选择 Agent 工具](/agents/overview)
+- Agent 工具配置
+  - 图形化工具
+    - [WorkBuddy](/agents/workbuddy)
+    - [Claude 桌面版](/agents/claude-desktop)
+    - [Codex 桌面版](/agents/codex-desktop)
+    - [CC Switch](/agents/cc-switch)
+  - 命令行工具
+    - [Claude Code](/agents/claude-code)
+    - [Codex CLI](/agents/codex)
+    - [Gemini CLI](/agents/gemini-cli)
+- 模型、费用与用量
+  - [模型广场](/model-plaza)
+  - [定价与订阅](/pricing)
+  - [余额与用量](/usage)
+- 问题排查
+  - [常见问题](/faq)
+  - [配置失败排查](/troubleshooting/configuration)
+  - [调用失败排查](/troubleshooting/request)
+  - [账号与支付问题](/troubleshooting/account)
+- 了解平台
+  - [平台介绍](/introduction)
+  - [联系客服](/support)

@@ -1,0 +1,17 @@
+# 内部协作文件（不公开）
+# AGENTS.md 是规范主体、CLAUDE.md 是一行 @AGENTS.md 导入，
+# 两者均含内部工作方法与部署规则，不随仓库公开。
+.claude/
+.workbuddy/
+AGENTS.md
+CLAUDE.md
+
+# 依赖与构建（本仓库为纯静态 Docsify，无需构建产物入库）
+node_modules/
+package.json
+package-lock.json
+
+# 操作系统垃圾文件
+.DS_Store
+Thumbs.db
+desktop.ini
