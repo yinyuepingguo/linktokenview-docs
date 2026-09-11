@@ -10,7 +10,7 @@ LinkTokenView 将多个国产大模型 API 汇集到同一平台，适合用于 
 
 ## OpenAI 兼容接口
 
-如果你的 Agent 工具或应用支持 OpenAI 兼容接口，通常可以通过调整接口地址、API Key 和模型名称接入 LinkTokenView。平台提供 Claude 桌面版、Codex 桌面版、Claude Code、Codex CLI 等工具的配置说明，选择对应的[Agent 工具](/agents/overview)查看操作步骤。
+如果你的 Agent 工具或应用支持 OpenAI 兼容接口，通常可以通过调整接口地址、API Key 和模型名称接入 LinkTokenView。平台提供 CC Switch、Claude 桌面版、Codex 桌面版、Harness 桌面版（DSH Desktop）等工具的配置说明，选择对应的[Agent 工具](/agents/overview)查看操作步骤。
 
 ## Token Plan 与 Coding Plan
 

@@ -6,9 +6,10 @@
   - [4. 选择 Agent 工具](/agents/overview)
 - Agent 工具配置
   - 图形化工具
-    - [WorkBuddy](/agents/workbuddy)
+    - [Harness（推荐）](/agents/dsh-desktop)
     - [Claude 桌面版](/agents/claude-desktop)
     - [Codex 桌面版](/agents/codex-desktop)
+    - [WorkBuddy](/agents/workbuddy)
     - [CC Switch](/agents/cc-switch)
   - 命令行工具
     - [Claude Code](/agents/claude-code)

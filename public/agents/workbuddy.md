@@ -41,7 +41,7 @@
 | API Key | 你的 LinkTokenView API 密钥 |
 | 模型名称 | 在[模型广场](/model-plaza)确认的模型 ID，例如 `mimo-v2.5-pro` |
 
-> 请求地址因工具而异。WorkBuddy 使用 `https://linktokenview.com/v1`；CC Switch 使用根地址 `https://linktokenview.com`，不要直接复制另一页的地址。
+> 请求地址因工具而异：WorkBuddy 与 Harness 桌面版使用 `https://linktokenview.com/v1`，CC Switch 使用根地址 `https://linktokenview.com`。请按对应页面填写，不要跨页面复制。
 
 1. 点击 **测试连接**，确认页面提示「连接成功」；
 2. 检查无误后，点击 **保存**。
