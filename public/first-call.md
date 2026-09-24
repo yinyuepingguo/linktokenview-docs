@@ -1,6 +1,6 @@
 # 快速开始
 
-从注册账号到发起请求，依次完成下面五步。
+从注册账号到配好 Agent 工具，依次完成下面四步。
 
 ## 1. 注册并登录
 
@@ -20,12 +20,8 @@ API 密钥是访问凭证。不要公开发送，也不要提交到代码仓库�
 
 ## 4. 选择并配置 Agent 工具
 
-进入[Agent 工具接入概览](/agents/overview)，选择正在使用的工具完成配置。
+还没有 Agent 工具？先用平台的 [LinkTokenView 桌面版](/agents/linktokenview-desktop)：它是内置编码 Agent 的 Windows 客户端，填入 API 密钥即可使用，不需要另外安装第三方工具。
+
+已经在用其他工具？进入[Agent 工具接入概览](/agents/overview)，按正在使用的工具完成配置。
 
 如果 API 密钥页面提供配置生成功能，优先使用页面生成的内容。
-
-## 5. 发起实际请求
-
-配置完成后，在目标 Agent 工具中发起一次实际请求，确认返回正常结果。
-
-如果配置保存成功但请求失败，请查看[配置失败排查](/troubleshooting/configuration)和[调用失败排查](/troubleshooting/request)。

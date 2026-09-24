@@ -47,7 +47,11 @@
       --link-text-decoration--hover: underline;
 
       /* 侧边栏 - sub2api 风格浅灰底 */
-      --sidebar-width: 260px;
+      /* 侧边栏宽度按「最长的导航项」定：三级条目「LinkTokenView 桌面版」正文 163px，
+         而每级缩进占 15px、折叠开关占 20px，所以三级条目可用文字宽 = 侧边栏宽 - 102px。
+         290px 下可用 188px，留约 25px 余量，避免不同系统中文字体宽度差异导致省略号。
+         （emoji 已用负外边距拉进左侧留白，不再占正文宽度。） */
+      --sidebar-width: 290px;
       /* 正文宽度 - 默认 55em（约 825px）在宽屏下过窄，适度放宽 */
       --content-max-width: 68em;
       --sidebar-background: #f8fafc;
@@ -107,6 +111,17 @@
       /* 封面 */
       --cover-heading-color: #14b8a6;
     }
+
+    /* 侧边栏「推荐」标记：把 emoji 从行内文字里拉到左侧留白中。
+       侧边栏每个链接都有 20px 左内边距（主题留给折叠箭头的槽位，叶子项空着），
+       负外边距让 emoji 落进这 20px，后面的标题文字就与同级条目对齐在同一列。 */
+    .sidebar-nav .lvHot {
+      display: inline-block;
+      width: 20px;
+      margin-left: -20px;
+      text-align: center;
+      font-style: normal;
+    }
   </style>
 </head>
 <body>
@@ -134,5 +149,7 @@
   </script>
   <script src="./vendor/docsify.min.js"></script>
   <script src="./vendor/search.min.js"></script>
+  <script src="./vendor/image-zoom.js"></script>
+  <script src="./vendor/sidebar-collapse.js"></script>
 </body>
 </html>

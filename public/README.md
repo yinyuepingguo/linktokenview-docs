@@ -6,7 +6,6 @@
 2. [创建 API 密钥](/api-keys)
 3. [确认余额与订阅状态](/usage)
 4. [选择 Agent 工具](/agents/overview)
-5. [发起实际请求](/first-call)
 
 ## 常用入口
 

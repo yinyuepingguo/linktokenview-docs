@@ -1,4 +1,4 @@
-# Harness 接入（推荐）
+# DeepSeek Harness 接入
 
 本页介绍在 DSH Desktop（DeepSeek Harness 桌面版）中添加 LinkTokenView 自定义提供方，并完成一次实际调用。
 

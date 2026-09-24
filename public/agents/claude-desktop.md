@@ -13,7 +13,7 @@
 Claude 桌面版通过 [CC Switch 接入指南](/agents/cc-switch)配置供应商：
 
 1. 启动 CC Switch，选择 **Claude**。
-2. 点击 **+**，进入「Claude 供应商」并选择 **自定义配置**。
+2. 点击 **+** 按钮，进入「Claude 供应商」并选择 **自定义配置**。
 3. 填写以下内容：
    - **供应商名称**：自定义名称，例如「LinkTokenView」
    - **API Key**：你的 LinkTokenView API 密钥
